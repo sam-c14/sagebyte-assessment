@@ -1,5 +1,5 @@
 'use client'
-import { FC, useState, useEffect, useRef } from "react";
+import { FC, useState, useEffect, useRef, JSX } from "react";
 import AngleDown from "./icons/angle-down";
 
 interface AccordionProps {
