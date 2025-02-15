@@ -20,6 +20,9 @@ import Bing from "@/public/bing.svg";
 import TradeDesk from "@/public/trade-desk.svg";
 import QuantCast from "@/public/quant-cast.svg";
 import DisplayVideo from "@/public/display-video.svg";
+import Speaker from "@/components/icons/speaker";
+import SearchGreen from "@/components/icons/search-green";
+import CreditCardOrange from "@/components/icons/credit-card-orange";
 
 export const sidebarDetails = [
   {
@@ -27,13 +30,15 @@ export const sidebarDetails = [
     label: "Define campaign objective",
     extras: ["Main objective: Purchase"],
     color: "#0ABF7E",
+    connector:"#0ABF7E",
     extrasColor: "#EBFEF4",
   },
   {
     icon: MapFunnel,
-    label: "Define campaign objective",
+    label: "Map funnel stages",
     extras: ["Awareness · Consideration · Conversion"],
     color: "#0ABF7E",
+    connector:"#3175FF",
     extrasColor: "#EBFEF4",
   },
   {
@@ -123,3 +128,23 @@ export const accordionItems = {
     },
   ],
 };
+
+export const accordions = [
+  {
+    status:"In Progress",
+    title:"Awareness", 
+    titleIcon:Speaker,  
+  },
+  {
+    status:"Not started",
+    title:"Consideration", 
+    titleIcon:SearchGreen,  
+    isDisabled:true
+  },
+  {
+    status:"Not started",
+    title:"Conversion", 
+    titleIcon:CreditCardOrange,  
+    isDisabled:true
+  },
+]
