@@ -5,7 +5,7 @@ import AngleDown from "./icons/angle-down";
 interface AccordionProps {
   title: string;
   disabled?: boolean;
-  titleIcon?: FC<any>;
+  titleIcon?: () => JSX.Element;
   status: string;
   children: React.ReactNode;
 }
