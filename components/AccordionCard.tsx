@@ -22,7 +22,7 @@ const AccordionCard: FC<AccordionCardProps> = ({
 
   useEffect(() => {
     validateSubmission(checked.some(value => value));
-  }, [checked, validateSubmission]);
+  }, [checked]);
 
   return (
     <div
